@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Grab Tinder Token",
+  "version": "1.0",
+  "description": "Attempts to grab the facebook access token before going forward",
+  "icons": {
+    "16": "stop-16.png",
+    "48": "stop-48.jpg",
+    "128": "stop-128.png"
+    },
+  "content_scripts":
+    [
+      {
+        "matches": ["*://*/*"],
+        "js": ["myscript.js"],
+        "run_at": "document_end"
+      }
+    ]
+}
